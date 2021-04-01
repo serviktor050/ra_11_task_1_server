@@ -4,7 +4,9 @@
   "description": "Реакт. Лекция 11. Сервер для задачи 1.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
   },
   "repository": {
     "type": "git",
